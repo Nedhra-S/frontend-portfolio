@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshop Registration</title>
+  <link rel="stylesheet" href="q30.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Technical Workshop Registration</h1>
+    <form id="workshop" novalidate>
+      <label>VIT Email ID
+        <input type="text" id="email" placeholder="username@vit.ac.in">
+      </label>
+      <fieldset>
+        <legend>Technical Interests</legend>
+        <label class="inline"><input type="checkbox" name="interest" value="Web Development"> Web Development</label><br>
+        <label class="inline"><input type="checkbox" name="interest" value="Artificial Intelligence"> Artificial Intelligence</label><br>
+        <label class="inline"><input type="checkbox" name="interest" value="Cyber Security"> Cyber Security</label><br>
+        <label class="inline"><input type="checkbox" name="interest" value="Cloud Computing"> Cloud Computing</label>
+      </fieldset>
+      <button type="submit">Register</button>
+    </form>
+    <div class="msg" id="msg"></div>
+  </div>
+  <script src="q30.js"></script>
+</body>
+</html>

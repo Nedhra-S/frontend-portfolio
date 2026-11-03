@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>College Events 2026 - Login &amp; Register</title>
+
+  <!-- Bootstrap downloaded and used as an external local file -->
+  <link rel="stylesheet" href="../assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="q43.css">
+</head>
+<body>
+
+  <header class="site-header text-center text-white">
+    <h1>College Events 2026</h1>
+  </header>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">CE 2026</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Login / Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container auth-section">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Login box -->
+      <div class="col-12 col-md-6 col-lg-5">
+        <div class="auth-box login-box">
+          <h2>Login</h2>
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="loginUser" class="form-label">Username / Email</label>
+              <input type="text" class="form-control" id="loginUser" placeholder="Enter username or email" required>
+            </div>
+            <div class="mb-3">
+              <label for="loginPass" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPass" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Registration box -->
+      <div class="col-12 col-md-6 col-lg-5">
+        <div class="auth-box register-box">
+          <h2>Register</h2>
+          <form action="#" method="post">
+            <div class="mb-3">
+              <label for="regName" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="regName" placeholder="Your full name" required>
+            </div>
+            <div class="mb-3">
+              <label for="regEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="regEmail" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="regPass" class="form-label">Password</label>
+              <input type="password" class="form-control" id="regPass" placeholder="Create password" minlength="6" required>
+            </div>
+            <div class="mb-3">
+              <label for="regConfirm" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="regConfirm" placeholder="Re-enter password" minlength="6" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Register</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer text-center">
+    <p class="mb-0">&copy; 2026 College Events</p>
+  </footer>
+
+  <script src="../assets/vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>

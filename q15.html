@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Search Engine</title>
+  <link rel="stylesheet" href="q15.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Smart Search Engine</h1>
+
+    <form class="controls" onsubmit="return false">
+      <input type="text" placeholder="Search products, services, or articles...">
+
+      <select aria-label="Category">
+        <option>All Categories</option>
+        <option>Electronics</option>
+        <option>Books</option>
+        <option>Clothing</option>
+        <option>Groceries</option>
+      </select>
+
+      <select aria-label="Price range">
+        <option>Any Price</option>
+        <option>Under ₹500</option>
+        <option>₹500 – ₹2,000</option>
+        <option>Above ₹2,000</option>
+      </select>
+
+      <button type="submit">Search</button>
+    </form>
+  </header>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body{margin:0;background:#f5f1e6;color:#222;font-family:Georgia,"Times New Roman",serif}
+.masthead{text-align:center;padding:18px 10px 8px;border-bottom:4px double #222;margin:0 24px}
+.masthead h1{margin:0;font-size:clamp(30px,6vw,56px);letter-spacing:1px;font-family:"Old English Text MT","Times New Roman",serif}
+.date{margin:6px 0 0;font-style:italic;border-top:1px solid #222;padding-top:6px}
+.paper{margin:20px 24px;column-count:3;column-gap:34px;column-rule:1px solid #8a8472;text-align:justify}
+article{break-inside:avoid;margin-bottom:22px}
+h3{margin:0 0 6px;font-size:1.15rem;border-bottom:1px solid #bbb;padding-bottom:3px}
+p{margin:0;line-height:1.55;font-size:.97rem}
+.main-headline{column-span:all;text-align:center;background:#fff8dc;border:2px solid #222;padding:14px 20px;margin-bottom:24px}
+.main-headline h2{margin:0 0 8px;font-size:clamp(24px,4vw,40px);color:#8b0000;text-transform:uppercase}
+@media (max-width:768px){.paper{column-count:1;margin:16px}}

@@ -1,0 +1,7 @@
+body{display:flex;flex-direction:column;min-height:100vh;font-size:17px;background:#f8f9fc}
+.site-header{background:linear-gradient(135deg,#4f46e5,#9333ea);padding:36px 16px}
+.site-header h1{margin:0;font-size:2.4rem;letter-spacing:1px}
+.main-section{flex:1;padding:60px 16px}
+.main-section h2{margin-bottom:18px;color:#312e81}
+.main-section p{max-width:680px;margin:0 auto 26px}
+.site-footer{background:#1f2937;color:#e5e7eb;padding:18px}

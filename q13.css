@@ -1,0 +1,19 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f3f3}
+.site-header{display:flex;align-items:center;gap:16px;background:#131921;color:#fff;padding:10px 16px}
+.site-header a{color:#fff;text-decoration:none}
+.logo{font-size:26px;font-weight:700;letter-spacing:.5px}
+.logo span{color:#febd69}
+.deliver,.account{display:flex;flex-direction:column;line-height:1.2;white-space:nowrap;padding:4px 6px;border:1px solid transparent;border-radius:3px}
+.deliver:hover,.account:hover,.cart:hover{border-color:#fff}
+small{color:#ccc;font-size:12px}
+.search{flex:1;display:flex;min-width:0}
+.search select{background:#e6e6e6;border:0;border-radius:4px 0 0 4px;padding:0 8px;font-size:13px}
+.search input{flex:1;min-width:0;border:0;padding:10px;font-size:15px}
+.search button{border:0;background:#febd69;padding:0 16px;font-size:18px;border-radius:0 4px 4px 0;cursor:pointer}
+.search button:hover{background:#f3a847}
+.cart{display:flex;align-items:flex-end;gap:4px;padding:4px 6px;border:1px solid transparent;border-radius:3px;position:relative}
+.icon{font-size:28px}
+.count{position:absolute;top:-4px;left:22px;color:#febd69;font-weight:700}
+.hint{padding:16px;color:#666}
+@media(max-width:820px){.deliver{display:none}}

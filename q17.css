@@ -1,0 +1,21 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Arial,sans-serif;background:#0d0f1c;color:#fff}
+.header{position:fixed;top:0;left:0;right:0;height:64px;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:0 28px;background:rgba(13,15,28,.92);border-bottom:1px solid #2a2e4d}
+.logo{font-size:26px;font-weight:800;color:#fff;text-decoration:none}
+.logo span{color:#7c5cff}
+nav{display:flex;gap:6px}
+nav a{color:#c9ccf0;text-decoration:none;padding:8px 14px;border-radius:6px}
+nav a:hover{color:#fff;background:#2a2e4d}
+.btn{display:inline-block;background:#7c5cff;color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-weight:700;transition:background .2s,transform .2s,box-shadow .2s}
+.btn:hover{background:#9b82ff;transform:translateY(-2px);box-shadow:0 6px 18px rgba(124,92,255,.45)}
+.banner{position:relative;height:70vh;margin-top:64px;overflow:hidden}
+.slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:fade 15s infinite}
+.s1{background-image:url(../assets/img/game1.svg)}
+.s2{background-image:url(../assets/img/game2.svg);animation-delay:5s}
+.s3{background-image:url(../assets/img/game3.svg);animation-delay:10s}
+@keyframes fade{0%{opacity:0}8%{opacity:1}33%{opacity:1}41%{opacity:0}100%{opacity:0}}
+.overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 20px;background:rgba(0,0,0,.35)}
+.overlay h2{font-size:clamp(28px,5vw,52px);margin:0 0 10px}
+.overlay p{font-size:clamp(15px,2vw,20px);margin:0 0 22px;color:#e4e6ff}
+.more{padding:60px 28px;height:600px;color:#9aa0d0}
+@media(max-width:700px){nav{display:none}}

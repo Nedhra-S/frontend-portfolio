@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Website layout using table</title>
+</head>
+<body>
+  <!-- The whole page layout is built with one table (no CSS) -->
+  <table width="90%" align="center" border="2" cellpadding="12" cellspacing="10">
+
+    <!-- header -->
+    <tr>
+      <td colspan="2" bgcolor="#ff3b3b" align="center">
+        <h1>Wanderlust Diaries</h1>
+        <i>Stories and pictures from my favourite places</i>
+      </td>
+    </tr>
+
+    <!-- nav -->
+    <tr>
+      <td colspan="2" bgcolor="#10c0e0" align="center">
+        <b><a href="#">Home</a> &nbsp;|&nbsp; <a href="#">Destinations</a> &nbsp;|&nbsp; <a href="#">Gallery</a> &nbsp;|&nbsp; <a href="#">Contact</a></b>
+      </td>
+    </tr>
+
+    <!-- section + article on the left, aside on the right (rowspan) -->
+    <tr>
+      <td width="68%" bgcolor="#ffbf5e" valign="top">
+        <h2>Section: Mountain Escape</h2>
+        <img src="../assets/img/mountain.svg" alt="Mountains" width="260" align="left" hspace="10">
+        <p>Snow-capped peaks, pine forests and fresh air - the mountains are the perfect place to slow down. Start early, carry warm clothes and enjoy the sunrise over the ridge.</p>
+      </td>
+      <td rowspan="2" width="32%" bgcolor="#ff69c6" valign="top">
+        <h3>Aside: Quick Links</h3>
+        <ul>
+          <li>Travel tips</li>
+          <li>Packing list</li>
+          <li>Best seasons</li>
+        </ul>
+        <img src="../assets/img/lake.svg" alt="Lake at sunset" width="180">
+        <p><small>Sunset at the lake</small></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td bgcolor="#ff914d" valign="top">
+        <h2>Article: A Day in the Forest</h2>
+        <img src="../assets/img/forest.svg" alt="Forest" width="260" align="right" hspace="10">
+        <p>A walk through the evergreen forest begins with the sound of birds. Follow the trail, rest by the stream and keep the place clean for the next traveller.</p>
+      </td>
+    </tr>
+
+    <!-- footer -->
+    <tr>
+      <td colspan="2" bgcolor="#777777" align="center">
+        <font color="white">&copy; 2026 Wanderlust Diaries &middot; Created by Nedhra S</font>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

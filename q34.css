@@ -1,0 +1,20 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;font-family:"Segoe UI",Arial,sans-serif;background:linear-gradient(135deg,#eef2ff,#fdf2f8)}
+.card{width:100%;max-width:340px;background:#fff;border-radius:14px;padding:24px 28px;box-shadow:0 10px 30px rgba(60,60,120,.15);text-align:center}
+h1{margin:0 0 14px;font-size:1.4rem;color:#3730a3}
+p{margin:10px 0}
+input[type=text],input[type=password]{width:100%;padding:11px;border:2px solid #c7cbe0;border-radius:8px;font-size:16px;font-family:inherit;transition:background .2s,border-color .2s}
+input:focus{outline:none;border-color:#6366f1}
+button{padding:11px 20px;border:0;border-radius:8px;background:#4f46e5;color:#fff;font-weight:600;font-size:15px;cursor:pointer;font-family:inherit}
+button:hover{background:#4338ca}
+.out{min-height:24px;font-weight:600;color:#4338ca}
+.hint{font-size:13px;color:#6b7280}
+.product{border:1px solid #e5e7eb;border-radius:12px;overflow:hidden}
+.img-wrap{position:relative;background:#eef1ff;transition:background .25s}
+.img-wrap img{display:block;width:100%;transition:transform .3s,filter .3s}
+.img-wrap.hover{background:#c7d2fe}
+.img-wrap.hover img{transform:scale(1.12) rotate(-3deg);filter:drop-shadow(0 10px 12px rgba(0,0,0,.3))}
+.extra{display:none;padding:8px 12px;font-size:14px;background:#fef9c3;color:#713f12}
+.body{padding:14px}
+.body h2{margin:0;font-size:1.1rem}
+#details{margin-top:10px;font-weight:600;color:#166534}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Symposium Registration - JavaScript</title>
+  <link rel="stylesheet" href="q29.css">
+</head>
+<body>
+  <div class="card">
+    <h1>National Technical Symposium Registration</h1>
+    <form id="reg" novalidate>
+      <div class="grid">
+        <label>Participant Name <input type="text" id="pname" placeholder="Alphabets and spaces only"><span class="err-text" id="nErr"></span></label>
+        <label>Register Number <input type="text" id="regno" placeholder="REG123456"><span class="err-text" id="rErr"></span></label>
+        <label>Email ID <input type="text" id="email" placeholder="name@example.com"><span class="err-text" id="eErr"></span></label>
+        <label>Mobile Number <input type="text" id="mobile" placeholder="10 digits"><span class="err-text" id="mErr"></span></label>
+        <label>Department
+          <select id="dept"><option value="">-- Select --</option><option>CSE</option><option>IT</option><option>ECE</option><option>EEE</option><option>Mechanical</option></select>
+          <span class="err-text" id="dErr"></span>
+        </label>
+      </div>
+      <fieldset>
+        <legend>Technical Skills</legend>
+        <label class="inline"><input type="checkbox" name="skills" value="Web Development"> Web Development</label>
+        <label class="inline"><input type="checkbox" name="skills" value="AI/ML"> AI/ML</label>
+        <label class="inline"><input type="checkbox" name="skills" value="Cyber Security"> Cyber Security</label>
+        <label class="inline"><input type="checkbox" name="skills" value="IoT"> IoT</label>
+        <label class="inline"><input type="checkbox" name="skills" value="Cloud"> Cloud</label>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <button type="reset" class="alt">Reset</button>
+    </form>
+    <div class="msg" id="msg"></div>
+    <div id="output"></div>
+  </div>
+  <script src="q29.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employee Registration (Q22)</title>
+  <link rel="stylesheet" href="q22.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Employee Registration</h1>
+
+    <video controls width="100%" poster="../assets/img/campus1.svg">
+      <source src="../assets/media/welcome.mp4" type="video/mp4">
+      <source src="../assets/media/welcome.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label>Full Name
+        <input type="text" name="fullname" placeholder="e.g. Nedhra S" pattern="[A-Za-z ]{3,50}" minlength="3" maxlength="50" required>
+      </label>
+
+      <label>Employee ID
+        <input type="text" name="empid" placeholder="EMP1234" pattern="EMP[0-9]{4}" maxlength="7" title="EMP followed by 4 digits" required>
+      </label>
+
+      <label>Email Address
+        <input type="email" name="email" placeholder="name@company.com" required>
+      </label>
+
+      <label>Password
+        <input type="password" name="password" id="password" placeholder="Min 8 characters" minlength="8" maxlength="20" required>
+      </label>
+
+      <label>Confirm Password
+        <input type="password" name="cpassword" id="cpassword" placeholder="Re-enter password" minlength="8" maxlength="20" required>
+      </label>
+
+      <label>Date of Birth
+        <input type="date" name="dob" required>
+      </label>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <label class="inline"><input type="radio" name="gender" value="Male" required> Male</label>
+        <label class="inline"><input type="radio" name="gender" value="Female"> Female</label>
+        <label class="inline"><input type="radio" name="gender" value="Other"> Other</label>
+      </fieldset>
+
+      <label>Department
+        <select name="department" required>
+          <option value="">-- Select Department --</option>
+          <option>Engineering</option>
+          <option>Human Resources</option>
+          <option>Finance</option>
+          <option>Marketing</option>
+          <option>Operations</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Skills</legend>
+        <label class="inline"><input type="checkbox" name="skills" value="HTML"> HTML</label>
+        <label class="inline"><input type="checkbox" name="skills" value="CSS"> CSS</label>
+        <label class="inline"><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+        <label class="inline"><input type="checkbox" name="skills" value="Python"> Python</label>
+      </fieldset>
+
+      <label>Mobile Number
+        <input type="tel" name="mobile" placeholder="10-digit mobile number" pattern="[0-9]{10}" maxlength="10" minlength="10" required>
+      </label>
+
+      <label>Upload Profile Photo
+        <input type="file" name="photo" accept="image/*" required>
+      </label>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset" class="alt">Reset</button>
+      </div>
+    </form>
+  </div>
+<script src="q22.js"></script>
+</body>
+</html>

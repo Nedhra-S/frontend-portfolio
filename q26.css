@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+body{margin:0;padding:24px;font-family:"Segoe UI",Arial,sans-serif;background:#f1f5f9}
+.box{max-width:640px;margin:auto;background:#fff;padding:24px 28px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+h1{margin:0 0 10px;color:#0f172a}
+h2{font-size:1.1rem;color:#334155}
+.steps{display:flex;gap:8px;list-style:none;padding:0;margin:0 0 14px;flex-wrap:wrap}
+.steps a{display:block;padding:8px 12px;border-radius:20px;background:#e2e8f0;color:#475569;text-decoration:none;font-size:13px}
+.steps .on a{background:#2563eb;color:#fff}
+form{display:flex;flex-direction:column;gap:14px}
+label{display:flex;flex-direction:column;gap:5px;font-size:14px;font-weight:600;color:#334155}
+input:not([type=radio]):not([type=checkbox]),select,textarea{padding:10px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;font-weight:400}
+input:focus,select:focus,textarea:focus{outline:2px solid #3b82f6}
+fieldset{border:1px solid #cbd5e1;border-radius:8px}
+legend{padding:0 6px;font-weight:600;font-size:14px}
+label.inline{display:inline-flex;flex-direction:row;align-items:center;gap:6px;margin-right:14px;font-weight:400}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.buttons{display:flex;gap:12px;margin-top:6px}
+button,.btn{flex:1;padding:12px;border:0;border-radius:8px;background:#2563eb;color:#fff;font-weight:600;font-size:15px;cursor:pointer;text-align:center;text-decoration:none}
+button:hover{background:#1d4ed8}
+.alt{background:#e2e8f0;color:#334155}
+table{width:100%;border-collapse:collapse;margin-bottom:12px}
+th,td{padding:10px;border-bottom:1px solid #e2e8f0;text-align:left}
+thead th{background:#f1f5f9}
+tfoot th{font-size:1.1rem}
+#msg{color:#15803d;font-weight:700}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout - Part B</title>
+  <link rel="stylesheet" href="q26.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Checkout</h1>
+    <ol class="steps">
+      <li class=""><a href="q26.html">A. Customer &amp; Delivery</a></li>
+      <li class="on"><a href="q26-payment.html">B. Payment</a></li>
+      <li class=""><a href="q26-cart.html">C. Cart Summary</a></li>
+    </ol>
+    <h2>Part B - Payment Details</h2>
+    <form action="q26-cart.html" method="get">
+      <fieldset>
+        <legend>Payment Method</legend>
+        <label class="inline"><input type="radio" name="pay" value="Credit Card" required> Credit Card</label>
+        <label class="inline"><input type="radio" name="pay" value="Debit Card"> Debit Card</label>
+        <label class="inline"><input type="radio" name="pay" value="UPI"> UPI</label>
+        <label class="inline"><input type="radio" name="pay" value="Net Banking"> Net Banking</label>
+        <label class="inline"><input type="radio" name="pay" value="COD"> Cash on Delivery</label>
+      </fieldset>
+      <label>Card Holder Name <input type="text" name="holder" placeholder="Name on card"></label>
+      <label>Card Number <input type="password" name="card" placeholder="XXXX XXXX XXXX XXXX" maxlength="16" pattern="[0-9]{16}"></label>
+      <div class="two">
+        <label>Expiry Date <input type="month" name="expiry"></label>
+        <label>CVV <input type="password" name="cvv" placeholder="***" maxlength="3" pattern="[0-9]{3}"></label>
+      </div>
+      <label>UPI ID <input type="text" name="upi" placeholder="name@bank" pattern="[A-Za-z0-9.\-_]+@[A-Za-z]+"></label>
+      <label class="inline"><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</label>
+      <div class="buttons"><a class="btn alt" href="q26.html">&larr; Back</a><button type="submit">Continue to Summary &rarr;</button></div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body{display:flex;flex-direction:column;min-height:100vh;background:linear-gradient(135deg,#eef2ff,#fdf2f8)}
+.site-header{background:linear-gradient(135deg,#4f46e5,#9333ea);padding:28px 16px}
+.site-header h1{margin:0;font-size:2.2rem}
+.auth-section{flex:1;padding:40px 16px}
+.auth-box{background:#fff;border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(60,60,120,.18);height:100%;border-top:6px solid #4f46e5;transition:transform .2s,box-shadow .2s}
+.auth-box:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(60,60,120,.25)}
+.register-box{border-top-color:#16a34a}
+.auth-box h2{margin-bottom:20px;font-size:1.5rem;text-align:center;color:#312e81}
+.form-control:focus{box-shadow:0 0 0 .2rem rgba(79,70,229,.25);border-color:#4f46e5}
+.site-footer{background:#1f2937;color:#e5e7eb;padding:18px}

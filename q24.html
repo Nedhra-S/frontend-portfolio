@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>National Technical Symposium Registration</title>
+  <link rel="stylesheet" href="q24.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>National Technical Symposium 2026</h1>
+    <p class="sub">Registration Portal</p>
+
+    <video controls width="100%">
+      <source src="../assets/media/welcome.mp4" type="video/mp4">
+      <source src="../assets/media/welcome.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+
+    <p class="small">Welcome message for participants:</p>
+    <audio controls>
+      <source src="../assets/media/welcome.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <div class="grid">
+        <label>Participant Name
+          <input type="text" name="pname" placeholder="Full name" pattern="[A-Za-z ]+" minlength="3" maxlength="50" required>
+        </label>
+        <label>Register Number
+          <input type="text" name="regno" placeholder="REG123456" pattern="REG[0-9]{6}" maxlength="9" title="REG followed by 6 digits" required>
+        </label>
+        <label>College Name
+          <input type="text" name="college" placeholder="College name" minlength="3" maxlength="80" required>
+        </label>
+        <label>Email ID
+          <input type="email" name="email" placeholder="name@example.com" required>
+        </label>
+        <label>Mobile Number
+          <input type="tel" name="mobile" placeholder="10-digit number" pattern="[0-9]{10}" minlength="10" maxlength="10" required>
+        </label>
+        <label>Date of Birth
+          <input type="date" name="dob" required>
+        </label>
+        <label>Department
+          <select name="dept" required>
+            <option value="">-- Select --</option>
+            <option>CSE</option><option>IT</option><option>ECE</option><option>EEE</option><option>Mechanical</option>
+          </select>
+        </label>
+        <label>Event Date
+          <input type="date" name="eventdate" required>
+        </label>
+      </div>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <label class="inline"><input type="radio" name="gender" value="Male" required> Male</label>
+        <label class="inline"><input type="radio" name="gender" value="Female"> Female</label>
+        <label class="inline"><input type="radio" name="gender" value="Other"> Other</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Technical Skills</legend>
+        <label class="inline"><input type="checkbox" name="skills" value="Web Development"> Web Development</label>
+        <label class="inline"><input type="checkbox" name="skills" value="AI/ML"> AI/ML</label>
+        <label class="inline"><input type="checkbox" name="skills" value="Cyber Security"> Cyber Security</label>
+        <label class="inline"><input type="checkbox" name="skills" value="IoT"> IoT</label>
+        <label class="inline"><input type="checkbox" name="skills" value="Cloud"> Cloud</label>
+      </fieldset>
+
+      <label>Upload Student ID Card
+        <input type="file" name="idcard" accept="image/*,.pdf" required>
+      </label>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset" class="alt">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

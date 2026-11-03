@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q1 - Local Web Server Setup</title>
+<link rel="stylesheet" href="q01.css">
+</head>
+<body>
+<main>
+  <h1>Install a Local Web Server &amp; Run a Page</h1>
+  <p class="lead">A local web server lets your laptop serve HTML files at <code>http://localhost</code> exactly like a real website.</p>
+
+  <section class="live">
+    <h2>Live status of this page</h2>
+    <table>
+      <tr><th>Protocol</th><td id="proto"></td></tr>
+      <tr><th>Host</th><td id="host"></td></tr>
+      <tr><th>Port</th><td id="port"></td></tr>
+      <tr><th>Served by</th><td id="mode"></td></tr>
+    </table>
+  </section>
+
+  <div class="grid">
+    <section>
+      <h2>Option A - XAMPP (Apache)</h2>
+      <ol>
+        <li>Download XAMPP from <b>apachefriends.org</b> and install it (default folder <code>C:\xampp</code>).</li>
+        <li>Open the <b>XAMPP Control Panel</b> and click <b>Start</b> next to <b>Apache</b>.</li>
+        <li>Put your site in <code>C:\xampp\htdocs\vit-site\</code>.</li>
+        <li>Open <code>http://localhost/vit-site/</code> in the browser.</li>
+      </ol>
+      <p><b>Configuration:</b> <code>C:\xampp\apache\conf\httpd.conf</code> - <code>Listen 80</code>, <code>DocumentRoot "C:/xampp/htdocs"</code>. If port 80 is busy, change to <code>Listen 8080</code>.</p>
+    </section>
+    <section>
+      <h2>Option B - VS Code Live Server</h2>
+      <ol>
+        <li>Install <b>Visual Studio Code</b>, then the <b>Live Server</b> extension.</li>
+        <li>Open the project folder in VS Code.</li>
+        <li>Right-click <code>index.html</code> &rarr; <b>Open with Live Server</b>.</li>
+        <li>The site opens at <code>http://127.0.0.1:5500</code> and refreshes on save.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Option C - Python (no install)</h2>
+      <pre>cd vit-site
+python -m http.server 8080</pre>
+      <p>Then browse to <code>http://localhost:8080</code>. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop.</p>
+    </section>
+    <section>
+      <h2>Working &amp; verification</h2>
+      <ul>
+        <li>Browser sends an HTTP request to <code>localhost</code>.</li>
+        <li>The server maps the URL to a file in the document root.</li>
+        <li>It returns the file with status <code>200 OK</code>.</li>
+        <li>Unknown paths return <code>404 Not Found</code>.</li>
+      </ul>
+    </section>
+  </div>
+  <p class="note">Submit: PDF with screenshots of the server control panel (Apache running) and the browser showing the page at <code>localhost</code>.</p>
+</main>
+<script src="q01.js"></script>
+</body>
+</html>

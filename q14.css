@@ -1,0 +1,9 @@
+body{margin:0;font-family:"Segoe UI",Arial,sans-serif}
+.header{display:flex;align-items:center;justify-content:space-between;background:#1c3d7a;padding:12px 28px;gap:20px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}
+.brand h1{margin:0;font-size:18px;color:#fff;font-weight:600}
+nav{display:flex;align-items:center;gap:8px}
+nav a{color:#dbe4ff;text-decoration:none;padding:8px 14px;border-radius:6px;transition:background .2s,color .2s}
+nav a:hover{background:#fff;color:#1c3d7a}
+nav a.apply{background:#f5c542;color:#1c2b4a;font-weight:700;margin-left:10px}
+nav a.apply:hover{background:#ffd75e;color:#000}

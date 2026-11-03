@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marks Calculator</title>
+  <link rel="stylesheet" href="q27.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Student Marks Calculator</h1>
+    <form id="form" novalidate>
+      <label>Subject 1 <input type="number" id="m1" min="0" max="100" placeholder="0 - 100"></label>
+      <label>Subject 2 <input type="number" id="m2" min="0" max="100" placeholder="0 - 100"></label>
+      <label>Subject 3 <input type="number" id="m3" min="0" max="100" placeholder="0 - 100"></label>
+      <button type="button" id="calc">Calculate</button>
+      <button type="reset" class="alt">Clear</button>
+    </form>
+    <div class="result" id="result">
+      <p>Total Marks: <b id="total"></b> / 300</p>
+      <p>Average Marks: <b id="avg"></b></p>
+    </div>
+    <div class="msg" id="msg"></div>
+  </div>
+  <script src="q27.js"></script>
+</body>
+</html>

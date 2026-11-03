@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Login</title>
+  <link rel="stylesheet" href="q23.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Student Login</h1>
+
+    <p class="small">Listen to the login instructions:</p>
+    <audio controls>
+      <source src="../assets/media/welcome.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <form action="#" method="post">
+      <label>Username or Email Address
+        <input type="text" name="username" placeholder="Enter username or email" minlength="3" maxlength="50" required>
+      </label>
+
+      <label>Password
+        <input type="password" name="password" placeholder="Enter password" minlength="6" maxlength="20" required>
+      </label>
+
+      <fieldset>
+        <legend>User Role</legend>
+        <label class="inline"><input type="radio" name="role" value="Student" checked> Student</label>
+        <label class="inline"><input type="radio" name="role" value="Faculty"> Faculty</label>
+      </fieldset>
+
+      <label class="inline"><input type="checkbox" name="remember"> Remember Me</label>
+
+      <div class="buttons">
+        <button type="submit">Login</button>
+        <button type="reset" class="alt">Clear</button>
+      </div>
+    </form>
+
+    <p class="links"><a href="#">Forgot Password?</a> &middot; <a href="#">Create New Account</a></p>
+  </div>
+</body>
+</html>

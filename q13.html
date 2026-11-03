@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Header</title>
+  <link rel="stylesheet" href="q13.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#">shop<span>kart</span></a>
+
+    <div class="deliver">
+      <small>Deliver to</small>
+      <strong>&#128205; Chennai, Tamil Nadu</strong>
+    </div>
+
+    <form class="search" onsubmit="return false">
+      <select aria-label="Category">
+        <option>All</option><option>Electronics</option><option>Books</option><option>Fashion</option><option>Home</option>
+      </select>
+      <input type="search" placeholder="Search products">
+      <button type="submit" aria-label="Search">&#128269;</button>
+    </form>
+
+    <a class="account" href="#"><small>Hello, Guest</small><strong>Account &amp; Lists</strong></a>
+    <a class="account" href="#"><small>Returns</small><strong>&amp; Orders</strong></a>
+    <a class="cart" href="#"><span class="icon">&#128722;</span><span class="count">0</span><strong>Cart</strong></a>
+  </header>
+  <p class="hint">Header only (as asked). All items sit in one horizontal row.</p>
+</body>
+</html>

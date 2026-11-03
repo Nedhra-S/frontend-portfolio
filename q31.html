@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employee Registration - Validation</title>
+  <link rel="stylesheet" href="q31.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Employee Registration</h1>
+    <form id="emp" novalidate>
+      <label>Employee ID
+        <input type="text" id="empid" placeholder="EMP1234" maxlength="7">
+        <span class="err-text" id="idMsg"></span>
+      </label>
+      <fieldset>
+        <legend>Employment Type</legend>
+        <label class="inline"><input type="radio" name="type" value="Full-Time"> Full-Time</label>
+        <label class="inline"><input type="radio" name="type" value="Part-Time"> Part-Time</label>
+        <label class="inline"><input type="radio" name="type" value="Intern"> Intern</label>
+      </fieldset>
+      <span class="err-text" id="typeMsg"></span>
+      <button type="submit">Register</button>
+    </form>
+    <div class="msg" id="msg"></div>
+  </div>
+  <script src="q31.js"></script>
+</body>
+</html>
